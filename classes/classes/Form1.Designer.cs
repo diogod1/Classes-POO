@@ -39,6 +39,7 @@
             this.lbl_result = new System.Windows.Forms.Label();
             this.btn_form2 = new System.Windows.Forms.Button();
             this.btn_multi = new System.Windows.Forms.Button();
+            this.btn_exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblreduzir
@@ -141,11 +142,22 @@
             this.btn_multi.UseVisualStyleBackColor = true;
             this.btn_multi.Click += new System.EventHandler(this.btn_multi_Click);
             // 
+            // btn_exit
+            // 
+            this.btn_exit.Location = new System.Drawing.Point(368, 126);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(75, 23);
+            this.btn_exit.TabIndex = 11;
+            this.btn_exit.Text = "Sair";
+            this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(455, 173);
+            this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.btn_multi);
             this.Controls.Add(this.btn_form2);
             this.Controls.Add(this.lbl_result);
@@ -179,5 +191,6 @@
         private Label lbl_result;
         private Button btn_form2;
         private Button btn_multi;
+        private Button btn_exit;
     }
 }

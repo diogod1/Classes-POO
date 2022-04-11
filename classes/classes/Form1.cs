@@ -56,5 +56,10 @@ namespace classes
             int n2 = Convert.ToInt32(txt_num2.Text);
             lbl_result.Text = (res.Multiplicaçao(n1, n2)).ToString();
         }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
